@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 
 
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -143,3 +144,5 @@ STATIC_URL = 'static/'
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 DEFAULT_FROM_EMAIL = "weather-report@example.com"
+
+OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
