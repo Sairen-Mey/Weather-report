@@ -29,11 +29,11 @@ class City(models.Model):
 class WeatherSnapshot(models.Model):
     city = models.ForeignKey('City',on_delete=models.CASCADE, related_name='weather_snapshots')
     description = models.CharField(max_length=255)
-    temperature = models.IntegerField(max_length=150)
-    wind_speed = models.IntegerField(max_length=100)
-    created_at = models.DateTimeField(max_length=100, auto_now_add=True)
-    observed_at = models.DateTimeField(max_length=100)
-    humidity = models.IntegerField(max_length=100)
+    temperature = models.IntegerField()
+    wind_speed = models.IntegerField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    observed_at = models.DateTimeField()
+    humidity = models.IntegerField()
     raw = models.JSONField(default=dict, blank=True)
 
     class Meta:

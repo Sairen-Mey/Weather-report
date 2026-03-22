@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="229ba40a-32f4-4507-a9d2-ac57a30cb26c" name="Changes" comment="" />
+    <list default="true" id="229ba40a-32f4-4507-a9d2-ac57a30cb26c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscriptions/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscriptions/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscriptions/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscriptions/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscriptions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscriptions/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/management/commands/fetch_weather.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/management/commands/fetch_weather.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/models.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +47,11 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\weather_report\subscriptions\management\commands" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="weather_report" />

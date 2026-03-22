@@ -13,6 +13,8 @@ class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument("--city", required=True)
 
+
+
     def handle(self, *args, **options):
         city_name = options["city"]
 
@@ -32,7 +34,7 @@ class Command(BaseCommand):
             self.stdout.write(self.style.ERROR(f"Error API! City '{city_name}' not found."))
             return
 
-        data = response.json()
+        data : dict = response.json()
 
         city, created = City.objects.get_or_create(
             name=data["name"],
@@ -50,7 +52,7 @@ class Command(BaseCommand):
 
         observation_time = timezone.make_aware(datetime.fromtimestamp(data["dt"]))
 
-        snapshot = WeatherSnapshot.objects.create(
+        WeatherSnapshot.objects.create(
             city=city,
             temperature=data["main"]["temp"],
             description=data["weather"][0]["description"],
@@ -58,5 +60,4 @@ class Command(BaseCommand):
             humidity=data["main"]["humidity"],
             observed_at=observation_time,
         )
-        # print(snapshot)
         self.stdout.write(self.style.SUCCESS(f"Successfully saved weather snapshot for {city.name}!"))
