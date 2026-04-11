@@ -17,6 +17,13 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         city_name = options["city"]
+        today = timezone.now().date()
+        city = City.objects.get(city=city_name)
+        city_last_snapshot = WeatherSnapshot.objects.filter(city).order_by('-created_at').first()
+
+        if city and  city_last_snapshot.observed_at == today:
+            self.stdout.write(self.style.WARNING(f"snapshot is already exist : {city_last_snapshot.pk}"))
+            return
 
         load_dotenv(Path(".") / ".env")
         API_KEY = os.getenv("OPENWEATHER_API_KEY")

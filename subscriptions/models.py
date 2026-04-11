@@ -8,3 +8,13 @@ class Subscription(models.Model):
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     last_sent_at = models.DateTimeField(null=True, blank=True)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=["city", "email"], name="uniq_city_email")
+        ]
+
+
+    def __str__(self):
+        return f"{self.city}, {self.email}"
+

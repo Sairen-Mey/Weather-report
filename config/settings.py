@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'notifications',
     'subscriptions',
     'weather',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -143,6 +144,19 @@ STATIC_URL = 'static/'
 
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-DEFAULT_FROM_EMAIL = "weather-report@example.com"
+
 
 OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
+
+
+
+EMAIL_HOST = 'smtp.office365.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+# Твої дані з файлу .env
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', 'weatherREP@outlook.com')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'твій_16_значний_пароль_додатка')
+
+# Ця адреса буде підставлятися за замовчуванням у поле "Від кого"
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

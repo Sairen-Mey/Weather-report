@@ -10,8 +10,13 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         active_subs = Subscription.objects.filter(is_active=True)
+        today = timezone.now().date()
 
         for sub in active_subs:
+            if sub.last_sent_at and sub.last_sent_at.date() == today:
+                self.stdout.write(self.style.WARNING(f"message is already pass: {sub.city.name}"))
+                continue
+
             latest_weahtersnapshot = WeatherSnapshot.objects.filter(city=sub.city).order_by('-created_at').first()
 
             if not latest_weahtersnapshot:
@@ -27,13 +32,15 @@ class Command(BaseCommand):
                 f"Wind speed: {latest_weahtersnapshot.wind_speed}\n"
                 f"Description: {latest_weahtersnapshot.description}\n"
             )
+            #
+            # send_mail(
+            #     subject=subject,
+            #     message=message,
+            #     from_email= settings.DEFAULT_FROM_EMAIL,
+            #     recipient_list = [sub.email],
+            # )
 
-            send_mail(
-                subject=subject,
-                message=message,
-                from_email= "ttwinkovitch4@gmail.com",#- create work email
-                recipient_list = [sub.email],
-            )
+            self.stdout.write(self.style.SUCCESS(message))
 
             sub.last_sent_at = timezone.now()
             sub.save(update_fields=["last_sent_at"])

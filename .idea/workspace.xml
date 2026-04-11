@@ -6,12 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="229ba40a-32f4-4507-a9d2-ac57a30cb26c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscriptions/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscriptions/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscriptions/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscriptions/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscriptions/management/commands/send_daily_reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscriptions/management/commands/send_daily_reports.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/subscriptions/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscriptions/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subscriptions/templates/subscriptions/create_subscription.html" beforeDir="false" afterPath="$PROJECT_DIR$/subscriptions/templates/subscriptions/create_subscription.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/subscriptions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscriptions/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather/management/commands/fetch_weather.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/management/commands/fetch_weather.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -38,13 +41,15 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Python.e.executor&quot;: &quot;Run&quot;,
     &quot;Python.manage.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/weather_report&quot;
   }
 }</component>
   <component name="RecentsManager">
