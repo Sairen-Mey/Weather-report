@@ -1,0 +1,7 @@
+<h2>vhid</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">signin</button>
+</form>
+<p>Don't have account? <a href="{% url 'accounts:register' %}">Register</a></p>

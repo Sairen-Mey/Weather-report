@@ -6,14 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="229ba40a-32f4-4507-a9d2-ac57a30cb26c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/create_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/create_account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscriptions/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscriptions/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscriptions/management/commands/send_daily_reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscriptions/management/commands/send_daily_reports.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscriptions/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscriptions/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscriptions/templates/subscriptions/create_subscription.html" beforeDir="false" afterPath="$PROJECT_DIR$/subscriptions/templates/subscriptions/create_subscription.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscriptions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/subscriptions/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather/management/commands/fetch_weather.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather/management/commands/fetch_weather.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

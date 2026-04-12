@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Sign Up</title>
 </head>
 <body>
 
+    <h2>Create Account</h2>
+    <form method="post">
+        {% csrf_token %}
+
+        {% if form.errors %}
+            <div style="color: red;">
+                <strong>Будь ласка, виправте наступні помилки:</strong>
+                {{ form.errors }}
+            </div>
+        {% endif %}
+
+        {{ form.as_p }}
+        <button type="submit">Створити акаунт</button>
+    </form>
+    <p>Already have account? <a href="{% url 'accounts:login' %}">Login</a></p>
 </body>
+
+
 </html>

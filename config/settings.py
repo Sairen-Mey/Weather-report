@@ -11,9 +11,6 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 import os
 from pathlib import Path
-
-
-
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -160,3 +157,6 @@ EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', 'твій_16_значни
 
 # Ця адреса буде підставлятися за замовчуванням у поле "Від кого"
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+
+LOGIN_REDIRECT_URL = 'accounts:profile'

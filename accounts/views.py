@@ -9,10 +9,12 @@ def create_account(request):
         form = RegisterForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('login')#
-
-    form = RegisterForm()
+            return redirect('accounts:login')
+    else:
+        form = RegisterForm()
 
     return render(request, "accounts/create_account.html", {"form": form})
 
 
+def profile(request):
+    return render(request, 'accounts/profile.html')
